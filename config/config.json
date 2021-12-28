@@ -1,0 +1,61 @@
+{
+	"COMMENT": "対象のディレクトリ",
+	"TARGET_DIR": "I:\\00_PG\\",
+	
+	"COMMENT": "読込対象拡張子 (対象.??? , 対象外!.???)",
+	"TARGET_EXTENSION_LIST": ["*"],
+	
+	"COMMENT": "デフォルトでgrep対象外の拡張子",
+	"DEFAULT_NOT_TARGET_EXTENSION": [".class",".jar",".icf",".gif",".zip",".ico",".CAB",".frx",".bmp",".doc",".png",".doc"],
+	
+	"COMMENT": "GREP対象外のディレクトリリスト（指定したディレクトリ配下はgrepしない）",
+	"NOT_TARGET_DIR_LIST": ["テスト","abc"],
+
+	"COMMENT": "コメントアウトの行をスキップする",
+	"SKIP_COMMENT_OUT_FLG": "false",
+	
+	"COMMENT": "出力ファイルをjson形式で出力（falseの場合、CSVで出力される）",
+	"OUTPUT_FILE_FORMAT_JOSN_FLG": "false",
+	
+	"COMMENT": "読込ファイルの文字コードをチェックしてファイルを読込む(trueにすると処理は遅くなる)",
+	"READ_FILE_ENCODEING_CHACK": "false",
+	
+	"COMMENT": "Excelのシート検索時の行の検索範囲",
+	"SEARCH_SHEET_COL_RANGE": 1000,
+	
+	"COMMENT": "Excel検索時の列の検索範囲",
+	"SEARCH_SHEET_ROW_RANGE": 1000,
+	
+	"COMMENT": "Excel拡張子",
+	"EXCEL_EXTENSION_LIST": [".xlsx",".xls",".xlsm"],
+	
+	"COMMENT": "各拡張子におけるコメントアウト文字を設定",
+	"COMMENT_OUT": {
+		"COMMENT": "java系のコメントアウト",
+		"COMMENT_OUT_JAVA": {
+			"COMMENT": "拡張子",
+			"EXTENSION": [".java",".js"],
+			
+			"COMMENT": "対象のコメントアウト文字",
+			"LIST": ["//", "/*", " *"]
+		},
+		
+		"COMMENT": "画面のコメントアウト",
+		"COMMENT_OUT_IMAGE": {
+			"COMMENT": "拡張子",
+			"EXTENSION": [".html",".htm",".jsp"],
+			
+			"COMMENT": "対象のコメントアウト文字",
+			"LIST": ["<!--"]
+		},
+		
+		"COMMENT": "sql系のコメントアウト",
+		"COMMENT_OUT_SQL": {
+			"COMMENT": "拡張子",
+			"EXTENSION": [".sql"],
+			
+			"COMMENT": "対象のコメントアウト文字",
+			"LIST": ["--", "/*"]
+		}
+	}
+}
